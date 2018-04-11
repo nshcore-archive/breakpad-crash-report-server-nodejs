@@ -1,0 +1,15 @@
+{
+  "moduleFileExtensions": [
+        "ts",
+        "tsx",
+        "js",
+        "json"
+    ],
+    "transform": {
+        "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "/src/.*\\.(test|spec).(ts|tsx|js)$",
+    "coveragePathIgnorePatterns": ["/src/.*\\.(interface|dto).(ts|tsx|js)$"],
+    "collectCoverageFrom" : ["src/**/*.{js,jsx,tsx,ts}", "!src/**/*.interface.{js,jsx,tsx,ts}", "!src/**/*.dto.{js,jsx,tsx,ts}", "!**/node_modules/**", "!**/vendor/**", "!**/__mocks__/**"],
+    "coverageReporters": ["json", "lcov"]
+}
