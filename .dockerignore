@@ -1,0 +1,17 @@
+node_modules
+.tmp
+*.seed
+*.log
+*.out
+*.pid
+npm-debug.log
+*~
+*#
+.DS_STORE
+.netbeans
+nbproject
+.idea
+.vscode
+.node_history
+Dockerfile
+docker-compose.json

@@ -10,7 +10,7 @@ export class CrashReportService implements CrashReportServiceInterface {
    * @param crashReportRepository
    */
   constructor(
-    @Inject('CrashReportRepositoryToken') public readonly crashReportRepository: Repository<CrashReport>) {}
+    @Inject('CrashReportRepositoryToken') private readonly crashReportRepository: Repository<CrashReport>) {}
 
     async findAll(): Promise<CrashReport[]> {
       return await this.crashReportRepository.find();
